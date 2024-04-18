@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de items MG</title>
+    <link rel="stylesheet" href="style.css"> <!--Archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de items MG</h1>
+        <p>Ingresa el prefijo y los nombres de los archivos:</p>
+        <label for="prefijo">Prefijo:</label>
+        <input type="text" id="prefijo" placeholder="Ingresa el prefijo (sfw)"><br>
+        <textarea id="nombresArchivo" rows="5" placeholder="Ingresa los nombres de los archivos" style="resize: none;"></textarea><br>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Cantidad"><br>
+        <button onclick="procesarNombres()">Generar Código</button>
+
+        <h2>Resultado:</h2>
+        <textarea id="resultado" rows="5" readonly style="resize: none;"></textarea><br>
+        <button onclick="codificarBase64()">Codificar en Base64</button>
+
+
+        <h2>Resultado Codificado en Base64:</h2>
+        <textarea id="resultadoBase64" rows="5" readonly style="resize: none;"></textarea>
+        <button onclick="descargarArchivo()">Descargar Archivo</button> <!-- Botón para descargar el archivo -->
+
+
+        <!-- Nuevo recuadro -->
+        <div class="nuevo-recuadro">
+            <h2>Exacts:</h2>
+            <textarea id="nuevo-resultado" rows="5" readonly style="resize: none;"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!--Archivo JavaScript -->
+</body>
+</html>
+
+<!-- No me hago responsable del uso que se haga con este codigo -->
