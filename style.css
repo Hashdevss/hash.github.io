@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Cambiado a 'min-height'*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://sourirehome.files.wordpress.com/2018/09/bc87e5124f8d2cfe810d403adc96ad01.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px; /* Agregado un margen inferior para dar espacio al final */
+}
+
+textarea,
+input[type="text"],
+input[type="number"],
+button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el nuevo recuadro */
+.nuevo-recuadro {
+    margin-top: 20px; /* Espacio entre el recuadro anterior y este */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#nuevo-resultado {
+    width: 100%;
+    margin-top: 10px; /* Espacio entre el recuadro y el resultado anterior */
+}
+
+/* <-- by hash -->
